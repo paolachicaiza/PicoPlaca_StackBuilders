@@ -23,7 +23,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_not_allowed_morning_edge(self):
         date = "14-06-2022"
-        hour = "06:00"
+        hour = "07:00"
         vehicle = Car("PBW-1364")
         actual = Validator(vehicle, date, hour).is_driving_allowed()
         expected = False
@@ -31,7 +31,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_not_allowed_night_edge(self):
         date = "27-05-2022"
-        hour = "21:00"
+        hour = "19:30"
         vehicle = Car("XBW-1860")
         actual = Validator(vehicle, date, hour).is_driving_allowed()
         expected = False

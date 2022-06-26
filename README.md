@@ -13,12 +13,12 @@ Using a dictionary, the project classifies the days as workdays and weekends, al
 The input of data for checking contains must the following structure:
 plate,date(d-m-y),hour(24 hours format - h:m)
 Example:
-PDW-3265,27-04-2022,20:30
+PDW-3265,27-04-2022,18:30
 XDC-3565,01-01-2022,08:37
 
 The main.py must have the name of the file that contains the data, the file can have one or more vehicles for checking. Finally, the project shows the following results:
 
-PDW-3265 on 27-04-2022 at 20:30: Driving NOT allowed
+PDW-3265 on 27-04-2022 at 18:30: Driving NOT allowed
 XDC-3565 on 01-01-2022 at 08:37: Driving allowed
 
 
