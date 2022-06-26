@@ -7,7 +7,7 @@ from src.driving_condition_validator import DrivingConditionValidator
 class MyTestCase(unittest.TestCase):
     def get_driving_condition(self):
         input_data = InputReader()
-        input_data.read_data("test_data.txt")
+        input_data.read_data("data.txt")
         input_data.parse_lines()
         plate = input_data.plate_str
         date = input_data.date_str

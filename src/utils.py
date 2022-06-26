@@ -27,7 +27,7 @@ def is_time_in_range(start_1, end_1, start_2, end_2, hour_checker):
     return is_time_in_range_1 or is_time_in_range_2
 
 
-def forbidden_time(hour_checker):
+def is_forbidden_time(hour_checker):
     return is_time_in_range(first_start_shift, first_end_shift,second_start_shift, second_end_shift, hour_checker)
 
 
