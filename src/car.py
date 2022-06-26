@@ -7,4 +7,4 @@ class Car(Vehicle):
         super().__init__(plate)
 
     def get_digit_checker(self):
-        return self.plate[-1]
+        return int(self.plate[-1])

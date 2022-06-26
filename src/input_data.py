@@ -4,6 +4,7 @@ class InputData:
         self.raw_date = raw_date
         self.raw_hour = raw_hour
 
+
     def get_raw_plate(self):
         return self.raw_plate
 

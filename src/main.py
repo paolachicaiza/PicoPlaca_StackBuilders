@@ -1,4 +1,4 @@
-from src.car import Car
+from car import Car
 from src.parser import Parser
 from src.validator import Validator
 
@@ -13,6 +13,6 @@ for data in parser.parsed_data:
     validator = Validator(vehicle, raw_date, raw_hour)
     circulation_allowed = validator.is_driving_allowed()
     if circulation_allowed:
-        print(f"{vehicle.plate}: Driving allowed")
+        print(f"{vehicle.plate} on {raw_date} at {raw_hour}: Driving allowed")
     else:
-        print(f"{vehicle.plate}: Driving NOT allowed")
+        print(f"{vehicle.plate} on {raw_date} at {raw_hour}: Driving NOT allowed")

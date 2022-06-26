@@ -8,10 +8,6 @@ def get_day_name(date_str):
     return date_checker.strftime("%A")
 
 
-def get_last_digit_plate(plate):
-    return int(plate[-1])
-
-
 def is_time_in_range(start_1, end_1, start_2, end_2, hour_checker):
     start_obj_1 = datetime.strptime(start_1, '%H:%M')
     end_obj_1 = datetime.strptime(end_1, '%H:%M')
